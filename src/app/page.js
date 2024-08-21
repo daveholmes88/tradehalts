@@ -1,7 +1,7 @@
 "use client"
 /** @jsxImportSource @emotion/react */
 import React, { useState, useEffect } from 'react';
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Container } from '@mui/material';
 import { css } from '@emotion/react'
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
     }
 
   return (
-    <div>
+    <Container maxWidth="xl">
         <TableContainer component={Paper}>
           <Table stickyHeader sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
         <TableHead>
@@ -58,6 +58,6 @@ export default function Home() {
         </TableBody>
       </Table>
     </TableContainer>
-    </div>
+    </Container>
   );
 }
